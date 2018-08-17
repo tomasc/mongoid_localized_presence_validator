@@ -31,6 +31,7 @@ class MyDoc
 
   # Validate the presence of any number of locales:
   validates :some_localized_field, presence: %i[cs]
+
   # Or just the default locale:
   validates :some_localized_field, presence: :default_locale
 end
