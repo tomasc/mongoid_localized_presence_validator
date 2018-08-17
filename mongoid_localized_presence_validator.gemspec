@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tomas Celizna", "Asger Behncke Jacobsen"]
   spec.email         = ["tomas.celizna@gmail.com", "a@asgerbehnckejacobsen.dk"]
 
-  spec.summary       = "Adds logic for localized fields to mongoid's presence validator"
+  spec.summary       = "Selectively validate presence in Monogid localized fields"
   spec.homepage      = 'https://github.com/tomasc/mongoid_localized_presence_validator'
   spec.license       = "MIT"
 
