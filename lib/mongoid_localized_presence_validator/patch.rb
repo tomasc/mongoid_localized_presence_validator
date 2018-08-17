@@ -1,3 +1,5 @@
+require 'mongoid'
+
 module MongoidLocalizedPresenceValidator
   module Patch
     def validate_each(document, attribute, value)
