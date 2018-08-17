@@ -1,0 +1,3 @@
+require "mongoid_localized_presence_validator/version"
+
+require "mongoid_localized_presence_validator/patch"
