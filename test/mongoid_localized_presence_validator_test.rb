@@ -1,11 +1,5 @@
 require "test_helper"
 
-class MongoidLocalizedPresenceValidatorTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::MongoidLocalizedPresenceValidator::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
-  end
+describe MongoidLocalizedPresenceValidator do
+  it { ::MongoidLocalizedPresenceValidator::VERSION.wont_be_nil }
 end
