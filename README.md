@@ -1,8 +1,11 @@
-# MongoidLocalizedPresenceValidator
+# Mongoid Localized Presence Validator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mongoid_localized_presence_validator`. To experiment with that code, run `bin/console` for an interactive prompt.
+When working with localized fields in your [mongoid](https://github.com/mongodb/mongoid)
+documents, you sometimes just want to validate the presence of just certain
+locales.
 
-TODO: Delete this and the text above, and describe your gem
+This patch of the [mongoid](https://github.com/mongodb/mongoid) presence
+validator makes it possible.
 
 ## Installation
 
@@ -22,7 +25,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```RUBY
+class MyDoc
+  include Mongoid::Document
+  field :some_localized_field, type: String, localize: true
+
+  # Validate the presence of any number of locales:
+  validates :some_localized_field, presence: %i[cs]
+  # Or just the default locale:
+  validates :some_localized_field, presence: :default_locale
+end
+```
 
 ## Development
 
