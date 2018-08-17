@@ -3,6 +3,8 @@ language: ruby
 script: 'bundle exec rake'
 rvm:
   - 2.5.1
+services:
+  - mongodb
 before_install:
   - gem install bundler -v 1.16.1
 notifications:
