@@ -1,8 +1,8 @@
 # Mongoid Localized Presence Validator
 
-This patch of the [mongoid](https://github.com/mongodb/mongoid) presence
-validator makes it easier to work with localized fields by adding the possibility
-to validate the presence of certain locales or the app's default locale.
+[![Build Status](https://travis-ci.org/tomasc/mongoid_localized_presence_validator.svg)](https://travis-ci.org/tomasc/mongoid_localized_presence_validator) [![Gem Version](https://badge.fury.io/rb/mongoid_localized_presence_validator.svg)](http://badge.fury.io/rb/mongoid_localized_presence_validator) [![Coverage Status](https://img.shields.io/coveralls/tomasc/mongoid_localized_presence_validator.svg)](https://coveralls.io/r/tomasc/mongoid_localized_presence_validator)
+
+This patch of the [mongoid](https://github.com/mongodb/mongoid) presence validator makes it easier to work with localized fields by adding the possibility to selectively validate the presence of certain locales or the app's default locale only.
 
 ## Installation
 
