@@ -29,7 +29,7 @@ class MyDoc
   include Mongoid::Document
   field :some_localized_field, type: String, localize: true
 
-  # Validate the presence of any number of locales:
+  # Validate the presence of specific locales:
   validates :some_localized_field, presence: %i[cs]
 
   # Or just the default locale:
