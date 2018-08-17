@@ -1,11 +1,10 @@
 # Mongoid Localized Presence Validator
 
-When working with localized fields in your [mongoid](https://github.com/mongodb/mongoid)
-documents, you sometimes just want to validate the presence of just certain
-locales.
-
 This patch of the [mongoid](https://github.com/mongodb/mongoid) presence
-validator makes it possible.
+validator makes it easier to work with localized fields.
+
+It adds the possibility to validate the presence of certain locales or the app's
+default locale.
 
 ## Installation
 
