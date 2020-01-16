@@ -15,7 +15,7 @@ module MongoidLocalizedPresenceValidator
 
       if locales.present?
         locales.each do |_locale|
-          _value = value.fetch(_locale.to_s, nil)
+          _value = Hash(value).fetch(_locale.to_s, nil)
           next unless not_present?(_value)
           document.errors.add(
             attribute,
